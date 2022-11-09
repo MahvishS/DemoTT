@@ -120,24 +120,23 @@ final public class MembershipUpshellView: UIView {
     
     private func setupRootViews() {
         self.addSubview(scrollView)
-        scrollView.addSubview(scrollContentsView)
-        scrollContentsView.addSubview(rootStackView)
-        
         scrollView.snp.makeConstraints { make in
-            make.top.equalTo(self.safeAreaLayoutGuide)
-            make.leading.trailing.equalTo(self.safeAreaLayoutGuide)
+            make.top.equalTo(self.safeAreaLayoutGuide.snp.top)
+            make.leading.trailing.equalToSuperview()
             make.width.equalToSuperview()
             make.bottom.equalTo(footerBannerView.snp.top)
         }
-
+        
+        scrollView.addSubview(scrollContentsView)
         scrollContentsView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
             make.width.equalToSuperview()
         }
 
+        scrollContentsView.addSubview(rootStackView)
         rootStackView.snp.makeConstraints { make in
-            make.left.equalToSuperview().inset(Space.four)
-            make.right.equalToSuperview().inset(Space.four)
+            make.left.right.equalToSuperview().inset(Space.four)
+            make.bottom.equalToSuperview()
             make.top.equalToSuperview().inset(Space.six)
         }
     }
@@ -181,20 +180,19 @@ final public class MembershipUpshellView: UIView {
         self.addSubview(footerBannerView)
         self.addSubview(footerButtons)
         
+        footerButtons.snp.makeConstraints { make in
+            make.trailing.leading.equalToSuperview().inset(Space.four)
+            make.bottom.equalTo(self.safeAreaLayoutGuide.snp.bottom).inset(Space.six)
+        }
+        
         footerLabel.snp.makeConstraints { make in
-            make.height.equalTo(Space.five)
-            make.left.right.equalToSuperview()
+            make.edges.equalToSuperview()
         }
         
         footerBannerView.snp.makeConstraints { make in
-            make.height.equalTo(Space.five)
-            make.left.right.equalToSuperview()
-        }
-        
-        footerButtons.snp.makeConstraints { make in
-            make.left.right.equalToSuperview().inset(Space.three)
-            make.top.equalTo(footerBannerView.snp.bottom).inset(-Space.three)
-            make.bottom.equalTo(self.safeAreaLayoutGuide).inset(Space.six)
+            make.height.greaterThanOrEqualTo(Space.five)
+            make.leading.trailing.equalToSuperview()
+            make.bottom.equalTo(footerButtons.snp.top).inset(-Space.three)
         }
     }
 
