@@ -1,0 +1,29 @@
+PODS:
+  - SnapKit (5.6.0)
+  - Thumbprint (2.3.6):
+    - SnapKit (~> 5.0)
+    - ThumbprintTokens (~> 12.1.0)
+    - TTCalendarPicker
+  - ThumbprintTokens (12.1.1)
+  - TTCalendarPicker (0.1.7):
+    - SnapKit
+
+DEPENDENCIES:
+  - Thumbprint
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - Thumbprint
+    - ThumbprintTokens
+    - TTCalendarPicker
+
+SPEC CHECKSUMS:
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Thumbprint: c18d75490ffff846eeb0d3e9ce36ced8ac3848bd
+  ThumbprintTokens: cfb6b1a3bff5079010ea9b875f558d0016579209
+  TTCalendarPicker: 41a4cecbc0be87bcc2aff2740c6cb835a1c26a90
+
+PODFILE CHECKSUM: 7459c63822924ece65ed1bd57e82d06585bfd627
+
+COCOAPODS: 1.11.3

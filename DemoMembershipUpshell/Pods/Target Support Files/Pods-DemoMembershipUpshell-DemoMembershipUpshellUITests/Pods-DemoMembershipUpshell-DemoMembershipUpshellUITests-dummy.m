@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_DemoMembershipUpshell_DemoMembershipUpshellUITests : NSObject
+@end
+@implementation PodsDummy_Pods_DemoMembershipUpshell_DemoMembershipUpshellUITests
+@end

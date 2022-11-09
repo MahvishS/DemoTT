@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-DemoMembershipUpshell-DemoMembershipUpshellUITests/Pods-DemoMembershipUpshell-DemoMembershipUpshellUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/TTCalendarPicker/TTCalendarPicker.framework
+${BUILT_PRODUCTS_DIR}/Thumbprint/Thumbprint.framework
+${BUILT_PRODUCTS_DIR}/ThumbprintTokens/ThumbprintTokens.framework

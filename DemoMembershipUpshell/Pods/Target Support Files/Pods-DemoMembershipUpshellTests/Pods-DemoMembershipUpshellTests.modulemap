@@ -1,0 +1,6 @@
+framework module Pods_DemoMembershipUpshellTests {
+  umbrella header "Pods-DemoMembershipUpshellTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
