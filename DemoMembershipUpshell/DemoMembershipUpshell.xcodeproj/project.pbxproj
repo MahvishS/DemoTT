@@ -17,6 +17,8 @@
 		1CE08742291BFA9A006E9703 /* DemoMembershipUpshellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08741291BFA9A006E9703 /* DemoMembershipUpshellTests.swift */; };
 		1CE0874C291BFA9A006E9703 /* DemoMembershipUpshellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0874B291BFA9A006E9703 /* DemoMembershipUpshellUITests.swift */; };
 		1CE0874E291BFA9A006E9703 /* DemoMembershipUpshellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0874D291BFA9A006E9703 /* DemoMembershipUpshellUITestsLaunchTests.swift */; };
+		1CE0875E291C004D006E9703 /* MembershipUpshellDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0875D291C004D006E9703 /* MembershipUpshellDataModel.swift */; };
+		1CE08760291C028B006E9703 /* MembershipUpshellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0875F291C028B006E9703 /* MembershipUpshellView.swift */; };
 		488A83DFE487A10421412AE9 /* Pods_DemoMembershipUpshellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DA372FEBA46C2B33F764AE /* Pods_DemoMembershipUpshellTests.framework */; };
 		7556E2B75C49225B2C759A1F /* Pods_DemoMembershipUpshell_DemoMembershipUpshellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B809D545A4686B0750FBCD27 /* Pods_DemoMembershipUpshell_DemoMembershipUpshellUITests.framework */; };
 		7C615F535D6610B7C933171B /* Pods_DemoMembershipUpshell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86692C08E4DF5C0A6872A148 /* Pods_DemoMembershipUpshell.framework */; };
@@ -54,6 +56,8 @@
 		1CE08747291BFA9A006E9703 /* DemoMembershipUpshellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoMembershipUpshellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE0874B291BFA9A006E9703 /* DemoMembershipUpshellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMembershipUpshellUITests.swift; sourceTree = "<group>"; };
 		1CE0874D291BFA9A006E9703 /* DemoMembershipUpshellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMembershipUpshellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CE0875D291C004D006E9703 /* MembershipUpshellDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipUpshellDataModel.swift; sourceTree = "<group>"; };
+		1CE0875F291C028B006E9703 /* MembershipUpshellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipUpshellView.swift; sourceTree = "<group>"; };
 		2B8FC0B93D38CFA109D669CE /* Pods-DemoMembershipUpshell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoMembershipUpshell.release.xcconfig"; path = "Target Support Files/Pods-DemoMembershipUpshell/Pods-DemoMembershipUpshell.release.xcconfig"; sourceTree = "<group>"; };
 		41DB339A55C4FD5F92D88F43 /* Pods-DemoMembershipUpshell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoMembershipUpshell.debug.xcconfig"; path = "Target Support Files/Pods-DemoMembershipUpshell/Pods-DemoMembershipUpshell.debug.xcconfig"; sourceTree = "<group>"; };
 		86692C08E4DF5C0A6872A148 /* Pods_DemoMembershipUpshell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoMembershipUpshell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,9 +122,11 @@
 		1CE08726291BFA99006E9703 /* DemoMembershipUpshell */ = {
 			isa = PBXGroup;
 			children = (
+				1CE0875C291C0031006E9703 /* ViewController */,
+				1CE0875B291C001A006E9703 /* Data */,
+				1CE0875A291C0014006E9703 /* View */,
 				1CE08727291BFA99006E9703 /* AppDelegate.swift */,
 				1CE08729291BFA99006E9703 /* SceneDelegate.swift */,
-				1CE0872B291BFA99006E9703 /* ViewController.swift */,
 				1CE0872D291BFA99006E9703 /* Main.storyboard */,
 				1CE08733291BFA9A006E9703 /* Assets.xcassets */,
 				1CE08735291BFA9A006E9703 /* LaunchScreen.storyboard */,
@@ -147,6 +153,30 @@
 			path = DemoMembershipUpshellUITests;
 			sourceTree = "<group>";
 		};
+		1CE0875A291C0014006E9703 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0875F291C028B006E9703 /* MembershipUpshellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CE0875B291C001A006E9703 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0875D291C004D006E9703 /* MembershipUpshellDataModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1CE0875C291C0031006E9703 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0872B291BFA99006E9703 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		4ABD5E14680D4D2688A4BD38 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +187,6 @@
 				AD1EC368BCA27BC4D64F10EE /* Pods-DemoMembershipUpshellTests.debug.xcconfig */,
 				984D5A51D04DF89CB743B011 /* Pods-DemoMembershipUpshellTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -413,6 +442,8 @@
 				1CE08732291BFA99006E9703 /* DemoMembershipUpshell.xcdatamodeld in Sources */,
 				1CE0872C291BFA99006E9703 /* ViewController.swift in Sources */,
 				1CE08728291BFA99006E9703 /* AppDelegate.swift in Sources */,
+				1CE0875E291C004D006E9703 /* MembershipUpshellDataModel.swift in Sources */,
+				1CE08760291C028B006E9703 /* MembershipUpshellView.swift in Sources */,
 				1CE0872A291BFA99006E9703 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
