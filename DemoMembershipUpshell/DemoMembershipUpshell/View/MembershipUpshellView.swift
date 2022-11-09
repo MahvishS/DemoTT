@@ -13,6 +13,9 @@ protocol MembershipUpshellViewDelegate: AnyObject {
     func membershipUpshellSeeAllBenefitsButtonTapped()
 }
 
+/// This class implements generic MembershipUpshell view
+/// It can be initialiaze with MembershipUpshell data model
+/// Delegates provides feasibility to provide customize implementation to button actions
 final public class MembershipUpshellView: UIView {
     private let scrollView = UIScrollView()
     private let scrollContentsView = UIView()
